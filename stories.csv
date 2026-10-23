@@ -1,0 +1,26 @@
+id,title,priority,status,issue
+US-01,User Registration,High,Done,1
+US-02,User Login,High,Done,4
+US-03,User Logout,Medium,Done,5
+US-04,Reset Password,High,In Review,8
+US-05,Update Profile,Low,To Do,11
+US-06,Browse Products,High,Done,6
+US-07,Search Products,High,In Review,2
+US-08,Filter and Sort Products,Medium,In Progress,9
+US-09,View Product Details,High,Done,7
+US-10,Add to Cart,High,In Progress,10
+US-11,Update Cart Quantity,Medium,To Do,12
+US-12,Remove from Cart,Medium,To Do,13
+US-13,Wishlist,Low,Backlog,17
+US-14,Apply Coupon,Medium,Backlog,18
+US-15,Checkout,High,To Do,14
+US-16,Make Payment,High,To Do,15
+US-17,Manage Addresses,Medium,Backlog,19
+US-18,Track Order,Medium,Backlog,20
+US-19,Cancel Order,Medium,Backlog,21
+US-20,Return and Refund,Low,Backlog,22
+US-21,Rate and Review,Low,Backlog,23
+US-22,View Order History,Medium,Backlog,24
+US-23,Admin: Manage Products,High,To Do,16
+US-24,Admin: Manage Orders,High,Backlog,25
+US-25,Admin: Manage Users,Low,Backlog,3
