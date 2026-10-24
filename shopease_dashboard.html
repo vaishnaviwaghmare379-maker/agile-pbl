@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopEase - My Dashboard</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, sans-serif; background: #f2f4f7; color: #222; display: flex; min-height: 100vh; }
+
+  /* sidebar */
+  .side { width: 200px; background: #1f2d3d; color: #fff; padding: 20px 0; }
+  .side h2 { margin: 0 0 20px; padding: 0 20px; font-size: 20px; }
+  .side a { display: block; padding: 10px 20px; color: #cfd8e3; text-decoration: none; font-size: 14px; }
+  .side a:hover, .side a.on { background: #324559; color: #fff; }
+
+  /* main area */
+  .main { flex: 1; padding: 24px; }
+  .main h1 { margin: 0; font-size: 22px; }
+  .hint { color: #777; font-size: 14px; margin: 4px 0 20px; }
+
+  .cards { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; }
+  .card { flex: 1; min-width: 140px; background: #fff; padding: 16px; border-radius: 6px; border-top: 4px solid #2f80ed; }
+  .card b { display: block; font-size: 26px; }
+  .card span { font-size: 13px; color: #666; }
+  .c2 { border-color: #f2994a; } .c3 { border-color: #eb5757; } .c4 { border-color: #27ae60; }
+
+  .box { background: #fff; padding: 16px; border-radius: 6px; }
+  .box h3 { margin: 0 0 12px; font-size: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 6px; border-bottom: 1px solid #eee; }
+  th { color: #666; font-weight: normal; }
+
+  .tag { padding: 2px 8px; border-radius: 10px; font-size: 12px; color: #fff; }
+  .shipped { background: #f2994a; } .delivered { background: #27ae60; } .packed { background: #2f80ed; }
+
+  @media (max-width: 600px) { body { flex-direction: column; } .side { width: 100%; } }
+</style>
+</head>
+<body>
+
+<div class="side">
+  <h2>ShopEase</h2>
+  <a href="#" class="on">Dashboard</a>
+  <a href="#">My Orders</a>
+  <a href="#">Cart</a>
+  <a href="#">Wishlist</a>
+  <a href="#">Profile</a>
+  <a href="#">Logout</a>
+</div>
+
+<div class="main">
+  <h1>Hello, Vaishnavi</h1>
+  <p class="hint">Here is a quick look at your account.</p>
+
+  <div class="cards">
+    <div class="card"><b>12</b><span>Total orders</span></div>
+    <div class="card c2"><b>3</b><span>Items in cart</span></div>
+    <div class="card c3"><b>5</b><span>Wishlist items</span></div>
+    <div class="card c4"><b>2</b><span>On the way</span></div>
+  </div>
+
+  <div class="box">
+    <h3>Recent orders</h3>
+    <table>
+      <tr><th>Order no.</th><th>Item</th><th>Date</th><th>Total</th><th>Status</th></tr>
+      <tr><td>#1042</td><td>Wireless Earphones</td><td>22 Oct</td><td>Rs. 1,299</td><td><span class="tag packed">Packed</span></td></tr>
+      <tr><td>#1038</td><td>Running Shoes</td><td>19 Oct</td><td>Rs. 2,499</td><td><span class="tag shipped">Shipped</span></td></tr>
+      <tr><td>#1031</td><td>Backpack</td><td>14 Oct</td><td>Rs. 899</td><td><span class="tag delivered">Delivered</span></td></tr>
+      <tr><td>#1025</td><td>Phone Cover</td><td>08 Oct</td><td>Rs. 299</td><td><span class="tag delivered">Delivered</span></td></tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
